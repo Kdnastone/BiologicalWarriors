@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Importar estilos
-import './NotFound.css'; 
+import './notFound.css'; 
 
 function NotFound() {
   return (
