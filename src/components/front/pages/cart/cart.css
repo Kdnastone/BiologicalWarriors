@@ -127,7 +127,7 @@
   padding-left: 230px;
   font-size: 20px;
   font-weight: 700;
-  border-top: 2px solid rgb(125, 26, 239);
+  border-top: 2px solid rgb(148, 54, 255);
 }
 
 .cart-total-price {
@@ -142,7 +142,7 @@
     width: auto;
     font-size: 15px;
     color: black;
-    background-color: rgb(250, 38, 38);
+    background-color: rgb(222, 123, 245);
 }
 
 .cart-delete-allBtn:hover {
@@ -151,7 +151,7 @@
 }
 
 .cart-delete-allBtn:active {
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(222, 123, 245);
     
 }
 
