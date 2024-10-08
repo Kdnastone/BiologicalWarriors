@@ -11,7 +11,9 @@ import Cart from '../pages/Cart';
 import Info from '../pages/Info';
 
 
-const AppRoutes = ({ productItems, cartItems, handleAddPd, handleRemovePd}) => {
+const AppRoutes = ({ productItems, cartItems, handleAddPd, handleRemovePd, handleRemoveAllPd}) => {
+
+  /*Renderizar el componente*/
   return (
     // Definir las rutas de la aplicación
     <Routes>
@@ -19,7 +21,7 @@ const AppRoutes = ({ productItems, cartItems, handleAddPd, handleRemovePd}) => {
       <Route path="/info" element={<Info />} />
       <Route path="/about" element={<About />} />
       <Route path="/products" element={<Products productItems={productItems} handleAddPd={handleAddPd}/>} />
-      <Route path="/cart" element={<Cart cartItems={cartItems} handleAddPd={handleAddPd} handleRemovePd={handleRemovePd } />} />
+      <Route path="/cart" element={<Cart cartItems={cartItems} handleAddPd={handleAddPd} handleRemovePd={handleRemovePd} handleRemoveAllPd={handleRemoveAllPd} />} /> 
     </Routes>
   );
 };

@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 //Importar estilos
 import "./header.css";
 
-function Header() {
+const Header = ({cartItems}) => {
   return (
     <div>
         {/*crear un header con un h1 que contenga un Link a la página principal */}
@@ -40,6 +40,9 @@ function Header() {
                   src="./cart.svg"
                   alt="Carrito de Compras"
                   style={{ width: "30px", height: "30px", marginRight: "5px" }}/>
+
+              {/*crear un span que contenga la cantidad de elementos en el carrito*/}
+              <span className="cart-count">{cartItems.length === 0? "" : cartItems.length}</span>
               </Link>
             </li>
           </ul>

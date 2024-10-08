@@ -44,8 +44,7 @@ function Products({ productItems, handleAddPd }) {
           <div>
             <button
               className="add-Btn"
-              onClick={() => handleAddPd(productItem)}
-            >
+              onClick={() => handleAddPd(productItem)}>
               Agregar al carrito
             </button>
           </div>

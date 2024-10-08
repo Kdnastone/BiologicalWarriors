@@ -14,7 +14,7 @@ const App = () => {
   const { productItems } = data;
   const [cartItems, setCartItems] = useState([]);
 
-  {/*Función para agregar productos al carrito*/}
+  /*Función para agregar productos al carrito*/
   const handleAddPd = (product) => {
     {/*Verificar si el producto ya está en el carrito*/}
     const productExist = cartItems.find((item) => item.id === product.id);
@@ -24,12 +24,13 @@ const App = () => {
           item.id === product.id ? { ...productExist, qty: productExist.qty + 1 } : item
         )
       );
-      {/*Si el producto no está en el carirto, agregarlo*/}
+      /*Si el producto no está en el carirto, agregarlo*/
     } else {
       setCartItems([...cartItems, { ...product, qty: 1 }]);
     }
   };
-
+  
+  /*Función para eliminar productos del carrito*/
   const handleRemovePd = (product) => {
   {/*Verificar si el producto ya está en el carrito*/}
   const productExist = cartItems.find((item) => item.id === product.id);
@@ -45,14 +46,21 @@ const App = () => {
     }
   };
 
+  /*Fución para eliminar todos los productos del carrito*/
+const handleRemoveAllPd = () => {
+  setCartItems([]);
+}
+
+  /*Renderizar el componente*/
   return (
     <Router>
-      <Header />
+      <Header cartItems={cartItems}/>
       <AppRoutes 
         productItems={productItems} 
         cartItems={cartItems}
         handleAddPd={handleAddPd}
         handleRemovePd={handleRemovePd}
+        handleRemoveAllPd={handleRemoveAllPd}
       />
     </Router>
   );

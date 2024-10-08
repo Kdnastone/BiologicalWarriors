@@ -6,6 +6,9 @@
     font-size: 15px;
     font-weight: 700;
     margin-left: 1%;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
 }
 
 .cart-items {
@@ -13,12 +16,15 @@
     width: auto;
     max-width: 70%;
     display: flex;
+    height: auto;
     flex-direction: column;
     background-color: rgb(231, 226, 239);
     border-radius: 5px;
     border: 2px solid rgb(168, 102, 244);
     padding: 1px; 
     box-sizing: border-box;
+    align-items: center;
+    width: fit-content;
 }
 
 
@@ -68,17 +74,17 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-weight: normal;
 }
 
 .cart-function {
     display: flex;
     gap: 10px;
-    margin: 0 auto; 
-    width: auto;
-    text-align: right;
+    margin: 0 10px;
+    text-align: center;
     align-items: center;
-    box-sizing: border-box;
-    flex-grow: 1;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
 .cart-add, .cart-delete {
@@ -91,13 +97,69 @@
     cursor: pointer;
 }
 
-.cart-price, .cart-total {
-    width: auto;
-    text-align: right;
+.cart-add {
+    background-color: rgb(0, 255, 0);
+}
+
+.cart-delete {
+    background-color: rgb(255, 0, 0);
+}
+
+.cart-add:active, .cart-delete:active {
+    transform: scale(0.9);
+}
+
+.cart-price {
     display: flex;
+    gap: 10px;
+    text-align: center;
     align-items: center;
-    box-sizing: border-box;
-    flex-grow: 1;
+    padding: 0 10px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-weight: normal;
+}
+
+.cart-total {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 230px;
+  font-size: 20px;
+  font-weight: 700;
+  border-top: 2px solid rgb(125, 26, 239);
+}
+
+.cart-total-price {
+    display: flex;
+    padding-left: 20px;
+}
+
+.cart-delete-allBtn{
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: auto;
+    font-size: 15px;
+    color: black;
+    background-color: rgb(250, 38, 38);
+}
+
+.cart-delete-allBtn:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.cart-delete-allBtn:active {
+    background-color: rgb(255, 0, 0);
+    
+}
+
+.cart-delete-all{
+    display: flex;
+    justify-content: right;
+    padding: 10px;
+    width: 100%;
 }
 
 .cart-price span, .cart-total span {
