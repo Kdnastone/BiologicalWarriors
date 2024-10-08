@@ -27,7 +27,7 @@ const data = {
     {
       id: 3,
       image: "./images//balaustium.jpg",
-      name: "Balastium leanderi",
+      name: "Balaustium leanderi",
       type: "Ácaro Depredador",
       description:
         "Ácaro depredador de la familia Erythraeidae. Depredador generalista de ácaros e insectos pequeños",

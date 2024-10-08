@@ -16,6 +16,7 @@ function Products({ productItems, handleAddPd }) {
 
   return (
     <div className="product-catalogue">
+      
       {/* Menú desplegable para seleccionar el tipo de producto */}
       <div className="filter-container">
         <label htmlFor="product-type-filter">Filtrar por tipo:</label>
