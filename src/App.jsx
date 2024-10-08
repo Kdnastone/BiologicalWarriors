@@ -7,8 +7,6 @@ import AppRoutes from './components/front/routes/AppRoutes';
 import data from './components/back/data/Data';
 import Header from './components/front/header/Header';
 
-// Importar estilos
-import './App.css';
 
 const App = () => {
   const { productItems } = data;

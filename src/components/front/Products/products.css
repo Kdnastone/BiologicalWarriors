@@ -105,3 +105,41 @@ h4{
     flex-wrap: wrap;
     gap: 20px;
 }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .card {
+        width: 45%;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .filter-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .add-Btn {
+        font-size: 16px;
+        height: 35px;
+    }
+
+    .product-price, .product-name {
+        font-size: 14px;
+    }
+}

@@ -14,18 +14,13 @@ const Header = ({cartItems}) => {
       <header className="header">
         <div>
           <h1>
-            <Link to="/info" className="info">
-              Biological Warriors
-            </Link>
+            <Link to="/" className="home">Biological Warriors</Link>
           </h1>
         </div>
 
         {/*crear un ul con 4 li, cada uno con un Link a una página diferente*/} 
         <div className="header-links">
           <ul>
-            <li>
-              <Link to="/">Inicio</Link>
-            </li>
             <li>
               <Link to="/about">Nosotros</Link>
             </li>
